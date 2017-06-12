@@ -9,12 +9,19 @@
 
 var longestPlaceName = "Taumatawhakatangihangakoauauotamateaturipukakapiki- maungahoronukupokaiwhenuakitanatahu";  //Yes, this is a real place located in Porangahau, Central Hawke's Bay.
 
-
+var howManyLetters = longestPlaceName.length;
+console.log("howManyLetters:", howManyLetters);
 
 /*Next, concatenate and console.log the following phrase:
 "x is the longest place name in the world and has y letters in its name."
 where x represents the value at `longestPlaceName` and y represents the value at `howManyLetters`*/
 
+var longLetter = longestPlaceName + " is the longest place name in the world and has " + howManyLetters + " letters in its name.";
+console.log("longLetter:", longLetter);
+
+
+var longerLetter = "There are " + howManyLetters + " letters in " + longestPlaceName + ", the longest place name in the world";
+console.log("longerLetter:", longerLetter);
 
 /*The string.charAt() method returns the character at the specified index (position).*/
 
@@ -22,7 +29,12 @@ where x represents the value at `longestPlaceName` and y represents the value at
 
 var iDidntKnow = "The national animal of Scotland is the Unicorn";
 
+var fifthLetter = iDidntKnow.charAt(5);
+console.log("fifthLetter:", fifthLetter);
 
+
+var fortythirdLetter = iDidntKnow.charAt(43);
+console.log("fortythirdLetter:", fortythirdLetter);
 
 /*The indexOf() method returns the index (position) of the first occurence of a specified text in a string.*/
 
@@ -30,7 +42,16 @@ var iDidntKnow = "The national animal of Scotland is the Unicorn";
 
 var randomFact = "All pandas in the world are on loan from China.";
 
+var worldLocator = randomFact.indexOf("C");
+console.log("worldLocator:", worldLocator);
 
+
+var pandaLocator = randomFact.indexOf("w");
+console.log("pandaLocator:", pandaLocator);
+
+
+var earthLocator = randomFact.indexOf("d");
+console.log("earthLocator:", earthLocator);
 
 /*The slice() method extracts a part of a string and returns the extracted part into a new string. This method takes 2 parameters: the starting index (position) and the ending index (position)*/
 
@@ -38,7 +59,16 @@ var randomFact = "All pandas in the world are on loan from China.";
 
 var edward = "People are afraid of me because I am different";
 
+var scissorHand = edward.slice(7, 17);
+console.log("scissorHand:", scissorHand);
 
+
+var cuttingHand = edward.slice(11, 23);
+console.log("cuttingHand:", cuttingHand);
+
+
+var slicingHand = edward.slice(31, 46);
+console.log("slicingHand:", slicingHand);
 
 /*The replace() method replaces a specified value with another value in a string.*/
 
@@ -46,7 +76,11 @@ var edward = "People are afraid of me because I am different";
 
 var grasshopper = "In order to taste my cup of water you must first fill your cup.";
 
+var theSifu = grasshopper.replace("fill", "empty");
+console.log(theSifu);
 
+var theSensei = grasshopper.replace("taste", "chill");
+console.log(theSensei);
 
 /*The toLowerCase() method converts the characters in a string to lower case.*/
 
@@ -54,7 +88,8 @@ var grasshopper = "In order to taste my cup of water you must first fill your cu
 
 var bigTime = "BRUuHHHH, I AM DA GreaTest!";
 
-
+var smallKine = bigTime.toLowerCase();
+console.log("smallKine:", smallKine);
 
 /*The toUpperCase() method converts the characters in a string to upper case.*/
 
@@ -62,7 +97,26 @@ var bigTime = "BRUuHHHH, I AM DA GreaTest!";
 
 var bandName = "the beatles";
 
+var bigBand = bandName.toUpperCase();
+console.log("bigBand:", bigBand);
 
+
+var otherbandName = "qotsa";
+
+var desertBand = otherbandName.toUpperCase();
+console.log("desertBand:", desertBand);
+
+
+var indieBand = "blood red shoes";
+
+var ukIndieband = indieBand.toUpperCase();
+console.log("ukIndieband:", ukIndieband);
+
+
+var otherotherBand = "phantogram";
+
+var nyBand = otherotherBand.toUpperCase();
+console.log("nyBand:", nyBand);
 
 /*The split() method converts a string into an array, by separating the string into substrings.*/
 
@@ -70,7 +124,8 @@ var bandName = "the beatles";
 
 var oreos = "red velvet, cookie dough, peanut butter, banana split, birthday cake";
 
-
+var oreoList = oreos.split();
+console.log(oreoList);
 
 /*The substr() method is similar to slice(). The difference is that the second parameter specifies the length of the extracted part. The 2 parameters: the starting index (position) and the length of the extracted part. */
 
@@ -78,11 +133,17 @@ var oreos = "red velvet, cookie dough, peanut butter, banana split, birthday cak
 
 var drinkMenu = "rum, gin, vodka, kool-aid, haterade";
 
+var favDrink = drinkMenu.substr(5, 3);
+console.log("favDrink:", favDrink);
 
 
+var redDrink = drinkMenu.substr(17, 8);
+console.log("redDrink:", redDrink);
 
 
-
+ var clearDrink = drinkMenu.substr(10, 5);
+ console.log("clearDrink:", clearDrink);      
        
-       
 
+var colaDrink = drinkMenu.substr(0, 3);
+console.log("colaDrink:", colaDrink);
